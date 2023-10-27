@@ -43,6 +43,7 @@ class Cell extends StatelessWidget {
         }
       },
       child: Card(
+        color: Colors.grey[50],
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: SizedBox(

@@ -35,6 +35,10 @@ class BreedsScreenState extends State<BreedsScreen> {
                   }
                 }),
              const SizedBox(height: 10,),
+             const Padding(
+               padding:  EdgeInsets.all(8.0),
+               child:  Text("Breed List : ",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.purple)),
+             ),
           //Breeds list
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.7,

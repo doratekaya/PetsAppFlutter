@@ -23,6 +23,7 @@ class _SubBreedScreenState extends State<SubBreedScreen> {
           child: Padding(
         padding: const EdgeInsets.all(15.0),
         child: ListView(
+          shrinkWrap: true,
           children: [
             //1 Sub breeds
             const Text(
@@ -46,7 +47,7 @@ class _SubBreedScreenState extends State<SubBreedScreen> {
                                 CellType.subbreed);
                           });
                     } else {
-                      return  Center(
+                      return Center(
                         child: Column(
                           children: [
                             //No available data title
@@ -55,31 +56,36 @@ class _SubBreedScreenState extends State<SubBreedScreen> {
                             TextButton(
                               onPressed: () {
                                 showDialog(
-              context: context,
-              builder: (context) {
-                return Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    //Image
-                    FutureBuilder(
-                        future:
-                            DogService().getRandomImageByBreed(breed, ""),
-                        builder: (context, snapshot) {
-                          if (snapshot.hasData) {
-                            return Image.network(snapshot.data!);
-                          } else {
-                            return const Center(
-                              child: CircularProgressIndicator(),
-                            );
-                          }
-                        }),
-                  ],
-                );
-              });
+                                    context: context,
+                                    builder: (context) {
+                                      return Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          //Image
+                                          FutureBuilder(
+                                              future: DogService()
+                                                  .getRandomImageByBreed(
+                                                      breed, ""),
+                                              builder: (context, snapshot) {
+                                                if (snapshot.hasData) {
+                                                  return Image.network(
+                                                      snapshot.data!);
+                                                } else {
+                                                  return const Center(
+                                                    child:
+                                                        CircularProgressIndicator(),
+                                                  );
+                                                }
+                                              }),
+                                        ],
+                                      );
+                                    });
                               },
                               child: const Text(
                                 "Generate random by breed",
                                 style: TextStyle(
+                                    fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.purple),
                               ),
@@ -118,7 +124,13 @@ class _SubBreedScreenState extends State<SubBreedScreen> {
                         ),
                         itemCount: snapshot.data!.length,
                         itemBuilder: (context, index) {
-                          return Image.network(snapshot.data![index]);
+                          return Padding(
+                            padding: const EdgeInsets.all(2.0),
+                            child: Image.network(
+                              snapshot.data![index],
+                              fit: BoxFit.cover,
+                            ),
+                          );
                         });
                   } else {
                     return const Center(
