@@ -1,25 +1,29 @@
 # flutter_pets_app
 
-A  Dog App Flutter project.
+A Dog App Flutter project.
 
 ## Getting Started
 
-# Flutter Template
+Dog App is a simple app displaying dog images by breeds or sub-breeds or randomly. This template provides simple UI and scalable project structure . 
 
-Dog App is a simple app displaying dog images by breeds or subbreeds or randomly. This template provides simple UI and scalable project structure . 
+The app has 2 basics Screens, the first one is to display random dog image and get the list of all breeds, the second screens display the sub breeds and get images for a specific breed, on taping on a sub-breed a dialog contains a random image depends on the breed and sub breed will be displayed.
 
-The app has basic 2 Screens, the first one is to display random dog image and get the list of all breeds, the second screens display the sub breeds and get images for a spesific breed, on taping on a subbreed a dialog contains a random image deponds on the breed and subbreed will be displayed. 
-
-It's configured with [MVVM] Architecture. 
+It's configured with [MVVM] Architecture.
 
 <br />
 <div>
   &emsp;&emsp;&emsp;
-  <img src="https://github.com/webfactorymk/flutter-template/blob/main/diagrams/light_theme.png" alt="First Screen theme" width="330">
+  <img src="https://github.com/doratekaya/PetsAppFlutter/blob/main/images/Screen1.png" alt="First Screen theme" width="330">
   &emsp;&emsp;&emsp;&emsp;
-  <img src="https://github.com/webfactorymk/flutter-template/blob/main/diagrams/dark_theme.jpg" alt="Second Screen" width="320">  
+  <img src="https://github.com/doratekaya/PetsAppFlutter/blob/main/images/Screen2_1.png" alt="Second Screen" width="320">  
   &emsp;&emsp;&emsp;&emsp;
-  <img src="https://github.com/webfactorymk/flutter-template/blob/main/diagrams/dark_theme.jpg" alt="Dialog Screen " width="320">  
+  <img src="https://github.com/doratekaya/PetsAppFlutter/blob/main/images/Screen2_2.png" alt="Second Screen" width="320">  
+  &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/doratekaya/PetsAppFlutter/blob/main/images/Screen3_1.png" alt="Dialog Screen" width="320">  
+  &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/doratekaya/PetsAppFlutter/blob/main/images/Screen3_2.png" alt="Dialog Screen " width="320">  
+  &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/doratekaya/PetsAppFlutter/blob/main/images/Screen3_3.png" alt="Dialog Screen " width="320">  
 </div>
 <br />
 
