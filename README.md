@@ -39,7 +39,7 @@ After installing the package dependencies with
 flutter pub get
 ```
 
-select the target device
+Select the target device
 
 ```
 flutter devices  
